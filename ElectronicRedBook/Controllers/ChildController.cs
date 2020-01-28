@@ -9,11 +9,11 @@ using ElectronicRedBook.Models;
 
 namespace WebApplicationZlogowaniem.Controllers
 {
-    public class HomeController : Controller
+    public class ChildController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<ChildController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ChildController(ILogger<ChildController> logger)
         {
             _logger = logger;
         }
@@ -23,17 +23,16 @@ namespace WebApplicationZlogowaniem.Controllers
             return View();
         }
 
-        public IActionResult Child()
-        {
-            RedirectToActionResult redirectResult = new RedirectToActionResult("Index", "Child", null);
-            return redirectResult;
-        }
-
-        public IActionResult Test()
+        public IActionResult BasicData()
         {
             return View();
         }
-        public IActionResult BasicInformations()
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        public IActionResult Labor()
         {
             return View();
         }

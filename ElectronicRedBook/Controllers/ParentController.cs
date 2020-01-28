@@ -7,32 +7,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ElectronicRedBook.Models;
 
-namespace WebApplicationZlogowaniem.Controllers
+namespace ElectronicRedBook.Controllers
 {
-    public class HomeController : Controller
+    public class ParentController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<ParentController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ParentController(ILogger<ParentController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Child()
-        {
-            RedirectToActionResult redirectResult = new RedirectToActionResult("Index", "Child", null);
-            return redirectResult;
-        }
-
-        public IActionResult Test()
-        {
-            return View();
-        }
         public IActionResult BasicInformations()
         {
             return View();
