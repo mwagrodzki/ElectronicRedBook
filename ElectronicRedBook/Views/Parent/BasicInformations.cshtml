@@ -5,31 +5,66 @@
 
 <h1>BasicInformations</h1>
 
-<div class="main child">
+<div class="main parent">
+
     <div class="container pb-3">
         <div class="text-center">
-            <h1 class="display-4">Welcome</h1>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Birthdate</th>
-                    <th>Pesel</th>
-                    <th>Education</th>
-                    <th>Profession</th>
+            <h1 class="display-4">Wyszukiwanie</h1>
 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-            </table>
-
+            <div>
+                <span class="tbl-span-search">
+                    <input type="text" placeholder="Search">
+                    <button id="btn_search" class="button btn-type-2">Search</button>
+                </span>
+                <span class="tbl-span-pages">
+                    <button id="btn_prev" class="button btn-type-2">Previous</button>
+                    <button id="btn_next" class="button btn-type-2">Next</button>
+                </span>
+                <table class="tbl">
+                    <tr>
+                        <th class="tbl-header-left">Name</th>
+                        <th class="tbl-header">Surname</th>
+                        <th class="tbl-header">PESEL</th>
+                        <th class="tbl-header">Education</th>
+                        <th class="tbl-header-right">Profession</th>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>Futterkiste</td>
+                        <td>70031206959</td>
+                        <td>unknown</td>
+                        <td>mentor</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>snabbkop</td>
+                        <td>75198498819</td>
+                        <td>unknown</td>
+                        <td>teacher</td>
+                    </tr>
+                    <tr>
+                        <td>Inland</td>
+                        <td>Trading</td>
+                        <td>41515195159</td>
+                        <td>solid</td>
+                        <td>driver</td>
+                    </tr>
+                    <tr>
+                        <td>Scheisse</td>
+                        <td>Essen</td>
+                        <td>35811591555</td>
+                        <td>none</td>
+                        <td>cook</td>
+                    </tr>
+                    <tr>
+                        <td>Bacchus</td>
+                        <td>Winecellars</td>
+                        <td>17559159195</td>
+                        <td>online courses</td>
+                        <td>sommelier</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
